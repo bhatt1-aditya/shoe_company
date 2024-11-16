@@ -3,7 +3,7 @@ import pant from "../../../public/images/pant.png";
 // import background from "../../../public/images/background.png";
 function About() {
   return (
-    <div>
+    <div id="about">
       <div className="grid grid-cols-1  md:grid-cols-2  bg-black   py-32 f justify-center items-center">
         <h1 className="text-white text-center text-4xl font-bold py-5 md:hidden block">
           About Us!

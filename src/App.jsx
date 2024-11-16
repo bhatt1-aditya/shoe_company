@@ -6,18 +6,26 @@ import About from "./components/about/About";
 import Company from "./components/shoeCompany/Company";
 import Contact from "./components/contactUs/Contact";
 import Footer from "./components/footer/Footer";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Traction />
-      <About />
-      <Company />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/traction" element={<Traction />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
+
+    // {/* <Hero />
+    // <Traction />
+    // <About />
+    // <Company />
+    // <Contact /> */}
   );
 }
 

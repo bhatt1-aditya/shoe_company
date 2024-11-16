@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Logo from "../../../public/images/0.png";
-
+import { scrollToSection } from "../../utils/scrollNavbar";
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const [navColor, setNavColor] = useState("bg-transparent");
@@ -24,6 +24,11 @@ function Navbar() {
   const handleChangeMenu = () => {
     setMenu(!menu);
   };
+
+  const handleNavigate = (id) => {
+    scrollToSection(id);
+  };
+
   return (
     <div>
       <div
@@ -38,11 +43,51 @@ function Navbar() {
         </div>
         <nav className="hidden md:inline-flex">
           <ul className="flex justify-center items-center gap-14 text-white lg:text-xl md:text-base font-semibold  ">
-            <li>Home</li>
-            <li>How It Works?</li>
-            <li>About</li>
-            <li>Testimonials</li>
-            <li>Contact Us</li>
+            <li>
+              <p
+                onClick={() => {
+                  handleNavigate("home");
+                }}
+              >
+                Home
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => {
+                  handleNavigate("company");
+                }}
+              >
+                How It Works?
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => {
+                  handleNavigate("about");
+                }}
+              >
+                About
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => {
+                  handleNavigate("traction");
+                }}
+              >
+                Testimonials
+              </p>
+            </li>
+            <li>
+              <p
+                onClick={() => {
+                  handleNavigate("contact");
+                }}
+              >
+                Contact Us
+              </p>
+            </li>
           </ul>
         </nav>
         <div className="md:hidden inline-block">

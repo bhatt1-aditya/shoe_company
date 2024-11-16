@@ -4,7 +4,7 @@ import group2 from "../../../public/images/Group 5.png";
 import group3 from "../../../public/images/Group 6.png";
 function Company() {
   return (
-    <div>
+    <div id="company">
       <div
         className="w-full xl:px-10 lg:px-8 md:px-6 px-4  flex flex-col justify-start bg-cover"
         style={{ backgroundImage: `url("../../../public/images/bg.png` }}

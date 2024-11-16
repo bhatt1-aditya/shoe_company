@@ -5,7 +5,7 @@ import arrow2 from "../../../public/images/arrow-2 1.png";
 import arrow3 from "../../../public/images/arrow-3 1.png";
 function Traction() {
   return (
-    <div>
+    <div id="traction">
       <div className="bg-black relative flex flex-col gap-20">
         <h1 className="text-white text-center md:text-5xl sm:text-3xl text-xl font-bold py-5">
           Have they finally made the

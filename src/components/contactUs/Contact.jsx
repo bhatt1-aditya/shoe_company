@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 import { TiCamera } from "react-icons/ti";
 function Contact() {
   return (
-    <div>
+    <div id="contact">
       <div className="bg-black flex md:flex-row flex-col xl:px-10 lg:px-8 md:px-6 px-4 py-10 justify-center items-center gap-5">
         <div className="w-1/2    flex flex-col justify-start items-center ">
           <h1 className="text-white lg:py-5 py-1 flex justify-center items-center lg:text-5xl md:text-4xl font-bold text-xl">
