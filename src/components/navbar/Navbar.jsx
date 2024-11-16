@@ -98,12 +98,57 @@ function Navbar() {
                 onClick={handleChangeMenu}
               />
               <nav className="">
-                <ul className="text-white absolute top-8 sm:right-3 right-3 w-1/2   bg-red-500 sm:pt-0 pt-10  px-3 sm:text-2xl text-xl  font-semibold flex flex-col sm:gap-4 gap-3 rounded-lg sm:justify-center sm:py-10 pb-5 sm:items-center items-start">
-                  <li>Home</li>
-                  <li>How It Works?</li>
-                  <li>About</li>
-                  <li>Testimonials</li>
-                  <li>Contact Us</li>
+                <ul className="text-white absolute top-8 sm:right-3 right-3 w-1/2 opacity-75 bg-[#767676] sm:pt-0 pt-10  px-3 sm:text-2xl text-xl  font-semibold flex flex-col sm:gap-4 gap-3 rounded-lg sm:justify-center sm:py-10 pb-5 sm:items-center items-start">
+                  <li>
+                    <p
+                      onClick={() => {
+                        handleNavigate("home");
+                        handleChangeMenu();
+                      }}
+                    >
+                      Home
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      onClick={() => {
+                        handleNavigate("company");
+                        handleChangeMenu();
+                      }}
+                    >
+                      How It Works?
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      onClick={() => {
+                        handleNavigate("about");
+                        handleChangeMenu();
+                      }}
+                    >
+                      About
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      onClick={() => {
+                        handleNavigate("traction");
+                        handleChangeMenu();
+                      }}
+                    >
+                      Testimonials
+                    </p>
+                  </li>
+                  <li>
+                    <p
+                      onClick={() => {
+                        handleNavigate("contact");
+                        handleChangeMenu();
+                      }}
+                    >
+                      Contact Us
+                    </p>
+                  </li>
                 </ul>
               </nav>
             </>
