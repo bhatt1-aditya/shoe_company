@@ -1,5 +1,6 @@
 import React from "react";
 import WhiteShoe from "../../../public/images/the-white-shoe-hero-image 1.png";
+import background from "../../../public/images/background-road-share 1.png";
 import { scrollToSection } from "../../utils/scrollNavbar";
 import Traction from "../traction/Traction";
 import About from "../about/About";
